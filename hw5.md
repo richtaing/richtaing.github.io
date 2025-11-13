@@ -4,16 +4,17 @@ title: Homework 5
 permalink: /hw5/
 ---
 
+<div id="dashboard"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-<div id="dashboard"></div>
-
 <script type="text/javascript">
-  var spec = "../assets/json/dashboard.json"; 
+  var spec = "https://richtaing.github.io/assets/json/dashboard.json"; 
   
   vegaEmbed('#dashboard', spec).then(function(result) {
+      console.log("Visualization loaded successfully");
   }).catch(console.error);
 </script>
 
