@@ -4,9 +4,16 @@ title: Homework 5
 permalink: /hw5/
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
 <div id="dashboard"></div>
+
 <script type="text/javascript">
-  var spec = "assets/json/dashboard.json";
+  // We use "../assets" to go "up" one level from "/hw5/" to find the assets folder
+  var spec = "../assets/json/dashboard.json"; 
+  
   vegaEmbed('#dashboard', spec).then(function(result) {
   }).catch(console.error);
 </script>
