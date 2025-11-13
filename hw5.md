@@ -11,7 +11,6 @@ permalink: /hw5/
 <div id="dashboard"></div>
 
 <script type="text/javascript">
-  // We use "../assets" to go "up" one level from "/hw5/" to find the assets folder
   var spec = "../assets/json/dashboard.json"; 
   
   vegaEmbed('#dashboard', spec).then(function(result) {
