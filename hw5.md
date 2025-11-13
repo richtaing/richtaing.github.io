@@ -17,8 +17,9 @@ permalink: /hw5/
       console.log("Visualization loaded successfully");
   }).catch(console.error);
 </script>
-
-Visualization 1: Geographic Density (STATIC)
+<br>
+<br>
+<b>Visualization 1:</b> Geographic Density (STATIC)
 For the first visualization, I created a static density heatmap to represent the geographic distribution of Bigfoot reports across the United States. Instead of plotting individual points, which often results in overplotting and obscures patterns in large datasets, this view aggregates the data into a grid. This provides a clear, high-level overview of where sightings are most concentrated without needing user input.
 
 - Encoding Types: I used the rect mark to construct the heatmap. Latitude and Longitude are mapped to the Y and X axes respectively.
@@ -27,7 +28,7 @@ For the first visualization, I created a static density heatmap to represent the
 I filtered the dataset in Python to remove rows with missing geographic coordinates (NaN in latitude/longitude). Additionally, I used Altair's internal binning transformation (bin=alt.Bin(maxbins=60)) on the coordinates to transform the raw, scattered data points into the structured grid format seen in the plot.
 
 
-Visualization 2: Seasonal Breakdown (Added Interaction)
+<b>Visualization 2:</b> Seasonal Breakdown (Added Interaction)
 For the second visualization, I built a stacked bar chart that adds a layer of interactivity to the first plot. While the map shows where reports happen, this chart explains when they happen. I linked this chart to the map so that it dynamically updates based on the user's selection, effectively turning the static map into an interactive exploration tool.
 
 - Encoding Types: I used a bar mark with state on the Y-axis and count() on the X-axis.
