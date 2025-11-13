@@ -4,6 +4,13 @@ title: Homework 5
 permalink: /hw5/
 ---
 
+<div id="dashboard"></div>
+<script type="text/javascript">
+  var spec = "assets/json/dashboard.json";  // Make sure this path is correct!
+  vegaEmbed('#dashboard', spec).then(function(result) {
+  }).catch(console.error);
+</script>
+
 Visualization 1: Geographic Density (STATIC)
 For the first visualization, I created a static density heatmap to represent the geographic distribution of Bigfoot reports across the United States. Instead of plotting individual points, which often results in overplotting and obscures patterns in large datasets, this view aggregates the data into a grid. This provides a clear, high-level overview of where sightings are most concentrated without needing user input.
 
