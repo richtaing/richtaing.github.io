@@ -6,7 +6,7 @@ permalink: /hw5/
 
 <div id="dashboard"></div>
 <script type="text/javascript">
-  var spec = "assets/json/dashboard.json";  // Make sure this path is correct!
+  var spec = "assets/json/dashboard.json";
   vegaEmbed('#dashboard', spec).then(function(result) {
   }).catch(console.error);
 </script>
